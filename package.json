@@ -1,0 +1,31 @@
+{
+  "name": "meetup",
+  "version": "1.0.0",
+  "description": "Meetup is a simple event planner app that uses localStorage and other html5 apis to create beautiful events",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravindrabarthwal/meetup.git"
+  },
+  "keywords": [
+    "meetup",
+    "udacity"
+  ],
+  "author": "Ravindra Barthwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravindrabarthwal/meetup/issues"
+  },
+  "homepage": "https://github.com/ravindrabarthwal/meetup#readme"
+}
