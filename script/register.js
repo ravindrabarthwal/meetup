@@ -1,3 +1,11 @@
+var forms = document.getElementsByTagName('form');
+	for (var i = 0; i < forms.length; i++) {
+	    forms[i].addEventListener('invalid', function(e) {
+	        e.preventDefault();
+	    }, true);
+	}
+
+
 var $name = $('#name');
 	var $email = $('#email');
 	var $password = $('#password');
