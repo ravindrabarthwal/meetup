@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meetup! - View Events</title>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Leckerli+One|Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Meetup!</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="view.html">View Events</a></li>
+        <li><a href="create.html">Create Event</a></li>
+        <li><a href="index.html" class="c2a">Register</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<section id="view">
+	<h1 class="title text-center animated fadeInDown"></h1>
+	<div class="container">
+		<div class="row animated fadeIn">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+				<div class="info-panel text-center">
+					<dl>
+						<dt>Event Type</dt>
+						<dd id="type"></dd>
+					</dl>
+					<dl>
+						<dt>Event Host</dt>
+						<dd id="host"></dd>
+					</dl>
+					<dl>
+						<dt>Event Start Time</dt>
+						<dd id="date-start"></dd>
+					</dl>
+					<dl>
+						<dt>Event End Time</dt>
+						<dd id="date-end"></dd>
+					</dl>
+					<dl>
+						<dt>Event Address</dt>
+						<dd id="address"></dd>
+					</dl>
+					<dl>
+						<dt>Host Message</dt>
+						<dd id="message"></dd>
+					</dl>
+					<dl id="guests">
+						<dt>Event Guests</dt>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/view.js"></script>
+</body>
+</html>

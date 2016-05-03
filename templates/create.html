@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meetup! - Create Event</title>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Leckerli+One|Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Meetup!</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="view.html">View Events</a></li>
+        <li><a href="create.html" class="active">Create Event</a></li>
+        <li><a href="index.html" class="c2a">Register</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<section id="create">
+	<h1 class="text-center title animated fadeInDown">Create.Meetup.Enjoy!</h1>
+		<div class="container">
+		<div class="row animated fadeIn">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 reg-div">
+				<form id="create-event-form" action="view.html">
+				  <div class="form-group">
+				    <label for="event-title">What's Your Awesome Event Title Will Be?</label>
+				    <input type="text" class="form-control" id="event-title" placeholder="Jake's 18th Birthday" autocomplete="event-title" required autofocus="true">
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="event-type">Which Event Type It Will Be?</label>
+				    <input list="event-type-list" class="form-control" id="event-type" placeholder="Birthday" required>
+				    <span class="warning"></span>
+				    <datalist id="event-type-list">
+				    	<option value="Birthday"></option>
+				    	<option value="Meeting"></option>
+				    	<option value="Wedding"></option>
+				    	<option value="Conference Talk"></option>
+				    </datalist>
+				  </div>
+				  <div class="form-group">
+				    <label for="event-host">Who Is The Host Of This Event?</label>
+				    <input type="text" class="form-control" id="event-host" placeholder="Mark" autocomplete="name" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="event-date-start">When Will Event Start?</label>
+				    <input type="datetime-local" class="form-control" id="event-date-start" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="event-date-end">When Will Event End?</label>
+				    <input type="datetime-local" class="form-control" id="event-date-end" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="event-guest">Who Will Be The Guests? Seperate by Comma!</label>
+				    <input type="text" class="form-control" id="event-guest" placeholder="Mike, Mark, James, Jenny, Jinny" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="address">Where The Event Will Happen?</label>
+				    <input type="text" class="form-control" id="address" placeholder="Flat 2, Street 1, California, US" autocomplete="street-address" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="message">Finally! Message To Guest. Optional!</label>
+				    <input type="text" class="form-control" id="message" placeholder="Thanks for taking part in our awesome event." autocomplete="message">
+				    <span class="warning"></span>
+				  </div>
+				  <button type="submit" class="btn btn-default btn-block btn-lg c2a">Create My Awesome Event</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/create.js"></script>
+</body>
+</html>

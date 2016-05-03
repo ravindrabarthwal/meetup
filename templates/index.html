@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meetup! - Register</title>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Leckerli+One|Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Meetup!</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="view.html">View Events</a></li>
+        <li><a href="create.html">Create Event</a></li>
+        <li><a href="index.html" class="c2a">Register</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<section id="register">
+	<h1 class="text-center title animated fadeInDown">Register.Create.Meetup!</h1>
+		<div class="container">
+		<div class="row animated fadeIn">
+			<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 reg-div">
+				<form id="reg-form" action="create.html">
+				  <div class="form-group">
+				    <label for="name">Hey! What's your Name?</label>
+				    <input type="text" class="form-control" id="name" placeholder="Ravi" autocomplete="name" required autofocus="true">
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="email">Let's Have Your Email Below</label>
+				    <input type="email" class="form-control" id="email" placeholder="ravi@meetup.com" autocomplete="email" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="password">Aha! Secure Password. Good!</label>
+				    <input type="password" class="form-control" id="password" placeholder="********" required>
+				    <span class="warning"></span>
+				  </div>
+				  <div class="form-group">
+				    <label for="role">Finally, Your Job Title. Optional!</label>
+				    <input list="role-list" class="form-control" id="role" placeholder="Student" autocomplete="role">
+				    <span class="warning"></span>
+				    <datalist id="role-list">
+				    	<option value="Student"></option>
+				    	<option value="CEO"></option>
+				    	<option value="Professor"></option>
+				    </datalist>
+				  </div>
+				  <button type="submit" id="reg-btn" class="btn btn-default btn-block btn-lg c2a">Let's Do This</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
